@@ -27,4 +27,5 @@
     "author": "Your Team",
     "license": "MIT"
   }
-  
+// There is no package-lock.json file here. We use the package-lock.json file to manage dependencies to ensure that the versions are safe to use without accidentally upgrading to a major version.
+// there are deprecated libraries in the package.json file. We should update them to the latest versions.
