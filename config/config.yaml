@@ -1,12 +1,14 @@
 # config.yaml
 
 database:
+# All sensitive data should be stored in K8s secret manager
   dbUser: "{{ssm:/prod/db/user}}"
   dbPassword: "{{ssm:/prod/db/password}}"
   dbHost: "{{secretsmanager:/prod/db/host}}"
   dbPort: "{{secretsmanager:/prod/db/port}}"
 
 api:
+  # explicit keys for each service
   paymentGatewayKey: "Fg7H2yLdM8VpQz3N6RbXtPWaK4CsJ9T5"  
   smsProviderKey: "X1Y2Z3A4B5C6D7E8F9G0H1I2J3K4L5M6" 
   internalServiceToken: "{{secretsmanager:/prod/api/internalService}}"  

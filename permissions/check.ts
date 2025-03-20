@@ -15,7 +15,7 @@ export enum Roles {
       CAN_GENERATE_MONTHLY_REPORT: true,
     },
     [Roles.USER]: {
-      CAN_VIEW_SENSITIVE_DATA: true,
+      CAN_VIEW_SENSITIVE_DATA: true,// guest have all permisison to false, not sure what guest can do here
       CAN_DELETE_USERS: false,
       CAN_VIEW_TRANSACTION_HISTORY: true,
       CAN_VIEW_ACCOUNT_SETTINGS: true,
